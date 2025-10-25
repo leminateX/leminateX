@@ -1,0 +1,23 @@
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))() 
+
+local Window = WindUI:CreateWindow({
+    Title = "LeminateXHub",
+    Icon = "door-open", -- lucide icon. optional
+    Author = "by leminateX", -- optional
+})
+
+local Tab = Window:Tab({
+    Title = "Tab main",
+    Icon = "bird", -- optional
+    Locked = false,
+})
+
+local Button = Tab:Button({
+    Title = "Button",
+    Desc = "Test Button",
+    Locked = false,
+    Callback = function()
+        -- ...
+    end
+})
+
